@@ -1,0 +1,35 @@
+#! /usr/env/python
+
+### this returns the api object after OAuth credentials
+
+import tweepy
+
+def get_api():
+      ''' returns the api interface to be used later'''
+      
+      read_credentials = open('credentials.txt','r')
+      
+      ck = read_credentials.readline()
+      if ck=="":
+           print "Error: Consumer key not specified in credentials.txt"
+      cs = read_credentials.readline()
+      if cs=="":
+           print "Error: Consumer key secret not specified in credentials.txt"
+           
+      at = read_credentials.readline()
+      if at=="":
+           print "Error: Auth token not specified in credentials.txt"
+            
+      ats = read_credentials.readline()
+      if ats=="":
+           print "Error: Auth token secret not specified in credentials.txt"
+
+      auth = tweepy.OAuthHandler(ck,cs)
+      auth.set_access_token(at,ats)
+      api = tweepy.API(auth)
+
+      return api
+    
+
+     
+      
