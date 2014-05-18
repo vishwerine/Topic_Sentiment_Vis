@@ -1,0 +1,16 @@
+<doctype html>
+
+<html>
+      <head>
+            <title> Searched Queries History </title>
+      </head>
+
+      <body>
+           <ol>
+           {% for query in queries %}
+            <li>   {{ query }} </li>
+           {% endfor %}
+           </ol>
+      </body>
+</html>
+

@@ -1,0 +1,57 @@
+{% extends "navbar_header.html" %}
+
+
+{% block content2 %}
+
+<div class="container">
+
+    <div class="jumbotron">
+                          <h1>  Topic-Sentiment Visualisation </h1>
+
+                          <p> Try out a search query in the search box to fetch relevant tweets from Twitter!! </p>
+
+                    
+
+
+                        
+                     <center>
+                   
+                     </center>
+ 
+      
+            </div>
+            </div>
+
+            
+
+
+
+ 
+<div class="navbar navbar-default navbar-fixed-bottom">
+              <div class="container">
+                <p class="navbar-text pull-left"> This Project is in development mode under the guidance of Dr. Yulan He, Aston University </p>
+                <a href="http://www.aston.ac.uk" class="navbar-buton btn-danger btn-pull-right"> Aston University </a>
+              </div>
+</div>
+
+ 
+           <div class="modal fade" id="contact" role="dialog">
+                       <div class="modal-dialog">
+                                  <div class="modal-content">
+                                          <div class="modal-header">
+                                               <h4> Under Construction </h4>
+
+                                           </div>
+                                           <div class="modal-body">
+                                              <p> To Contact Us </p>
+                                              <a class="btn btn-default">Contact </a>
+                                              <a class="btn btn-default" data-dismiss="modal">Close </a>
+                                           </div>
+                                  </div>
+                       </div>
+            </div>
+
+
+{% endblock %}
+
+       

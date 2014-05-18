@@ -3,10 +3,10 @@ from django.conf.urls import patterns, include, url
 from django.contrib import admin
 admin.autodiscover()
 
-from views import current_datetime , tweets, index
+from views import search_history , tweets, index
 
 urlpatterns = patterns('',
-    (r'^time/$', current_datetime),
+    (r'^history/$', search_history),
     (r'^tweets/$',tweets),
     (r'^index/$',index),
     # Examples:

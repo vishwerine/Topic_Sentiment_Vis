@@ -1,0 +1,26 @@
+{% load staticfiles %}
+
+<html>
+      <head>
+            <title> Topic Sentiment Visualisation </title>
+ 
+            <meta name="viewport" content="width=device-width,initial-scale=1.0">
+            <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+            <link href="{% static 'css/styles.css' %}" rel="stylesheet">
+     
+      
+      </head>
+
+      <body>
+             
+            
+            {% block content %}
+
+            {% endblock %}
+
+           
+  <script src="{% static 'js/bootstrap.js' %}"> </script>
+ <script src="{% static 'jqueryfile.js' %}"> </script>
+
+     </body>
+</html>

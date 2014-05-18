@@ -1,0 +1,14 @@
+<doctype html>
+
+<html>
+      <head>
+            <title> Searched Queries History </title>
+      </head>
+
+      <body>
+           {% for i in range(len(queries)) %}
+            <p>  number {{ i }}  {{ queries[i] }} </p>
+           {% endfor %}
+      </body>
+</html>
+
