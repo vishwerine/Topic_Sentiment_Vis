@@ -1,0 +1,27 @@
+{% extends 'header_jumbotron.html' %}
+
+{% block main_content %}
+
+
+
+<div class="jumbotron">
+      <div class="container">
+      <div class="tweets">
+      {% for li in ans %}
+       <div class="well">
+         {{ li.tweet }}
+
+       </div>
+       {% for l in li.emotion %}
+      <button>  {{ l }} </button>
+       {% endfor %}
+      {% endfor %}   
+      
+      </div>
+       </div>
+ </div>
+
+
+
+
+{% endblock main_content %}

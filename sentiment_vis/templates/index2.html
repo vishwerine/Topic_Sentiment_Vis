@@ -1,0 +1,60 @@
+{% extends 'header_jumbotron.html' %}
+
+
+{% block active_h %}
+class="active"
+{% endblock %}
+
+
+{% block main_content %}
+<div class="container">
+
+    <div class="jumbotron">
+                          <h1>  Topic-Sentiment Visualisation </h1>
+
+                          <p> Try out a search query in the search box to fetch relevant tweets from Twitter!! </p>
+
+                    
+
+
+                        
+                     <center>
+                       <form action="/tweets" method="get">
+                          <input type="text" name="q">
+                         <input type="submit" value="Search">
+                       </form>
+  
+                     </center>
+ 
+      
+      </div>
+</div>
+
+
+<div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h2>Tweet Pre-Processing Techniques</h2>
+          <p>Details about tweet preprocessing techniques </p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+          <h2> Method to label tweets </h2>
+          <p>Simple lexicon matching methods </p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+       </div>
+        <div class="col-md-4">
+          <h2> Topics and Sentiments </h2>
+          <p>Information about topics and sentiments </p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div>
+      </div>
+
+            
+
+
+
+{% endblock main_content %}
+
+
+

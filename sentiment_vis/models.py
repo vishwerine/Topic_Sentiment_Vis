@@ -12,11 +12,16 @@ class SearchQuery(models.Model):
 class TweetObject(models.Model):
          tweet = models.CharField(max_length=150) 
          query = models.CharField(max_length =30)
-
+        
          def __unicode__(self):
                  return self.tweet
 
 
 
+class EmotionObject(models.Model):
+          tweet = models.ForeignKey('TweetObject')
+          query = models.CharField(max_length=30)
+          emotion = models.IntegerField()
+          sentiment = models.BooleanField()
 
-         
+

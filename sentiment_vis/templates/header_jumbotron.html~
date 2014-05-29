@@ -1,0 +1,87 @@
+{% extends 'base_jumbotron.html' %}
+
+{% block title %}
+Sentiment Topic Visualisation HomePage
+{% endblock title %}
+
+
+{% block head_script %}   {% block head_script_add %} {% endblock head_script_add %}  {% endblock head_script %}
+
+
+{% block body_content %}
+<div class="navbar navbar-inverse navbar-fixed-top">
+            
+     <div class="container">
+              <a href="/index" class="navbar-brand"> Topic-Sentiment Visualisation Tool </a>
+              
+              <button class="navbar-toggle" data-toggle="collpase" data-target=".navHeaderCollapse">
+                      <span class="icon-bar"> </span>
+                      <span class="icon-bar"> </span>
+                      <span class="icon-bar"> </span>
+              </button>
+
+              <div class ="collapse navbar-collapse navHeaderCollapse">
+                   <ul class="nav navbar-nav navbar-right">
+                         
+                         <li  {% block active_h %} {% endblock %}>  <a href="/index"> Home </a> </li>
+                         <li  {% block active_t %} {% endblock %}>  <a href="/topics"  > Topics </a> </li>
+                         <li  {% block active_s %} {% endblock %}>  <a href="/sentiments"> Sentiments </a> </li>
+                         
+                         <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Services </a>
+                            <ul class="dropdown-menu">
+                               <li> <a href="http://services.iitrpr.ac.in"> Services Home </a> </li>
+                               <li> <a href="http://10.1.201.10"> Satluj-Intranet </a> </li>
+                               <li> <a href="http://10.1.201.10/moodle"> Moodle </a> </li>
+                               <li> <a href="http://10.1.0.78/mediawiki"> Media Wiki </a> </li>
+                               <li> <a href="http://10.1.1.150/videoportal"> Video Portal </a> </li>
+                            </ul>
+                         </li> 
+                      
+                        <li>  <a href="#contact" data-toggle="modal"> Contact us </a> </li>
+
+                        
+                    </ul>                
+               </div>
+     </div>
+ 
+</div>
+
+<br>
+<br>
+<br>
+
+
+{% block main_content %}
+
+{% endblock main_content %}
+
+
+ 
+<div class="navbar navbar-default navbar-fixed-bottom">
+              <div class="container">
+                <p class="navbar-text pull-left"> This Project is in development mode under the guidance of Dr. Yulan He, Aston University </p>
+                <a href="http://www.aston.ac.uk" class="navbar-buton btn-danger btn-pull-right"> Aston University </a>
+              </div>
+</div>
+
+ 
+           <div class="modal fade" id="contact" role="dialog">
+                       <div class="modal-dialog">
+                                  <div class="modal-content">
+                                          <div class="modal-header">
+                                               <h4> Under Construction </h4>
+
+                                           </div>
+                                           <div class="modal-body">
+                                              <p> To Contact Us </p>
+                                              <a class="btn btn-default">Contact </a>
+                                              <a class="btn btn-default" data-dismiss="modal">Close </a>
+                                           </div>
+                                  </div>
+                       </div>
+            </div>
+
+
+{% endblock body_content %}
+

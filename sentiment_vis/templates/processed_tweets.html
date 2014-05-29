@@ -1,0 +1,30 @@
+{% extends 'header_jumbotron.html' %}
+
+{% block main_content %}
+
+
+
+<div class="jumbotron">
+      <div class="container">
+
+        <h3>Processed Tweets</h3>
+        
+        <div class="tweets">
+         <p><a class="btn btn-primary btn-lg" role="button" href="/emotion?q={{q}}"> NRC Emotion Lexicon </a> </p>
+         <div class="well" id="head_tweet" style="display:none;"> </div>
+         {% for t in list1 %}      
+         <div class="well"> {{ t }} </div>
+         {% endfor %}
+
+         <div class="well" id="last_tweet" style="display:none;"> </div>
+      </div>
+
+       </div>
+ </div>
+
+
+
+
+{% endblock main_content %}
+
+
